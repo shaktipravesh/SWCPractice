@@ -20,9 +20,11 @@ public class SumOfXOROfAllPairs {
 			System.out.println(iSum);
 		}
 
+		sc.close();
 	}
 
 	// Solution 1 Naive O(n^2) appoarch
+	@SuppressWarnings("unused")
 	private static long getSumOfXOROfAllPairs(int[] iNumArray, int iSize) {
 		long iSum = 0;
 		for(int i = 0; i < iSize; i++) {
@@ -36,7 +38,6 @@ public class SumOfXOROfAllPairs {
 	//Solution2	Expert O(Nlog N)
 	private static long getSumOfXOROfAllPairsEfficient(int[] aNum, int iSize) {
 		long iSum = 0;
-		long iMod = 1000000007;
 		int ones[] = new int[33];
 		
 		for(int x:aNum) {
