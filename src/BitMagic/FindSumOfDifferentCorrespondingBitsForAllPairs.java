@@ -16,7 +16,7 @@ public class FindSumOfDifferentCorrespondingBitsForAllPairs {
 			int[] aNum = new int[iSize];
 			for(int i = 0; i < iSize; i++) {
 				aNum[i] = sc.nextInt();
-				System.out.println(Integer.toBinaryString(aNum[i]));
+				//System.out.println(Integer.toBinaryString(aNum[i]));
 			}
 			long iSum = getSumofDifferentBitForAllPairsEfficient(aNum, iSize);
 			System.out.println(iSum);
