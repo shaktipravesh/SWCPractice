@@ -14,6 +14,7 @@ public class LuckyAlivePersonInACircle {
 			iLuckyPersonToAlive = getLuckyPersontoAlive(iNum);
 			System.out.println(iLuckyPersonToAlive);
 		}
+		sc.close();
 
 	}
 
