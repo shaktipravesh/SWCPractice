@@ -1,6 +1,5 @@
 package BitMagic;
 
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class IsBinaryNumberMultipleo3 {
@@ -20,6 +19,8 @@ public class IsBinaryNumberMultipleo3 {
 			}
 			
 		}
+		
+		sc.close();
 
 	}
 	

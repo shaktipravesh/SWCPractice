@@ -14,6 +14,7 @@ public class AryaAndTheGreatWar {
 			iSteps = getSetBits(iNum);
 			System.out.println(iSteps);
 		}
+		sc.close();
 
 	}
 

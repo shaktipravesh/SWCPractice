@@ -25,6 +25,7 @@ public class SubsetsWithXORValue {
 			iRes = getMaxXOR(iNumArray, iXORArray, iSize, iXORArraySize-1, iRes, iXORValue);
 			System.out.println(iRes);
 		}
+		sc.close();
 
 	}
 

@@ -3,7 +3,7 @@ package BitMagic;
 import java.util.Scanner;
 
 public class ReverseBits {
-	public void ReverseBits(Scanner sc){
+	public ReverseBits(Scanner sc){
 		int iNum = sc.nextInt();
 		int iCount = 31, iResNum = 0;
 		while (iNum > 0) {

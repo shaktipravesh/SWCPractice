@@ -2,8 +2,6 @@ package BitMagic;
 
 import java.util.Scanner;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
-
 public class FindSumOfDifferentCorrespondingBitsForAllPairs {
 
 	public static void main(String[] args) {
@@ -21,6 +19,7 @@ public class FindSumOfDifferentCorrespondingBitsForAllPairs {
 			long iSum = getSumofDifferentBitForAllPairsEfficient(aNum, iSize);
 			System.out.println(iSum);
 		}
+		sc.close();
 	}
 
 	private static long getSumofDifferentBitForAllPairsEfficient(int[] aNum, int iSize) {
@@ -43,6 +42,7 @@ public class FindSumOfDifferentCorrespondingBitsForAllPairs {
 		return iSum;
 	}
 	
+	@SuppressWarnings("unused")
 	private static long getSumofDifferentBitForAllPairs(int[] aNum, int iSize) {
 		long iSum = 0;
 		long iMod = 0;

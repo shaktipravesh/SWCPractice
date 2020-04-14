@@ -22,7 +22,7 @@ public class MaximumXORSubset {
 			iMaxXOR = getMaxXOR(iNumArray, iXORArray, iSize, iXORArraySize-1, iMaxXOR);
 			System.out.println(iMaxXOR);
 		}
-
+		sc.close();
 	}
 
 	private static int getMaxXOR(int[] iNumArray, int[] iXORArray, int iSize, int iXORArraySize, int iMaxXOR) {
