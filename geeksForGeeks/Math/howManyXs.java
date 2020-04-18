@@ -13,7 +13,7 @@ public class howManyXs {
 			int iLower = sc.nextInt();
 			int iUpper = sc.nextInt();
 			int iOccurance = 0;
-			//iOccurance= getOccurences(iLower, iUpper, iX);
+			iOccurance= getOccurences(iLower, iUpper, iX);
 			iOccurance = getRangeOccurencesEfficient(iLower, iUpper, iX);
 			System.out.println(iOccurance);
 		}
@@ -64,35 +64,6 @@ public class howManyXs {
 			}
 		}
 		return iOccurance;
-	}
-
-	private static int getOccurences(int iNum, int iX) {
-		int result = 0; // Initialize result 
-		  
-	    // Count appearances in numbers starting 
-	    // from d. 
-	    int itr = iX; 
-	    while (itr <= iNum) 
-	    { 
-	        // When the last digit is equal to d 
-	        if (itr%10 == iX) 
-	            result++; 
-	  
-	        // When the first digit is equal to d then 
-	        if (itr != 0 && itr/10 == iX) 
-	        { 
-	            // increment result as well as number 
-	            result++; 
-	            itr++; 
-	        } 
-	  
-	        // In case of reverse of number such as 12 and 21 
-	        else if (itr/10 == iX-1) 
-	            itr = itr + (10 - iX); 
-	        else
-	            itr = itr+10; 
-	    } 
-	    return result; 
 	}
 
 }

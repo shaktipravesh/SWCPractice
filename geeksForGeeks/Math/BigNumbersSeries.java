@@ -19,7 +19,7 @@ public class BigNumbersSeries {
 			}
 			System.out.println();
 		}
-
+		sc.close();
 	}
 
 	private static int[][] createBigNumberof100(int[][] aBigNumber, int[][] aFactorial) {
