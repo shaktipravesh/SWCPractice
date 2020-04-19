@@ -3,8 +3,6 @@ package arrays;
 import java.util.Scanner;
 /*package whatever //do not write package name here */
 
-import java.util.*;
-import java.lang.*;
 import java.io.*;
 
 class TrappingRainWater {
@@ -258,6 +256,7 @@ class TrappingRainWater {
 
 
 
+
 /*
  * https://practice.geeksforgeeks.org/problems/trapping-rain-water/0/
  * 
@@ -286,4 +285,5 @@ class TrappingRainWater {
  * 
  * 
  */
+
 
