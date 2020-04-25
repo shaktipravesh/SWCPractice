@@ -1,4 +1,4 @@
-package Strings;
+package strings;
 
 import java.util.Scanner;
 
@@ -16,6 +16,7 @@ public class MinimumIndexedCharacter {
 			System.out.println(minIndexChar);
 			
 		}
+		sc.close();
 
 	}
 
