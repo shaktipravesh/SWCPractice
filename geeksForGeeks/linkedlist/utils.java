@@ -1,7 +1,14 @@
 package linkedlist;
 
 public class utils {
-
+	
+	public void printList(Node node) {
+		while(node != null) {
+			System.out.print(node.data + " ");
+			node = node.next;
+		}
+		System.out.println();
+	}
 }
 
 class Node {
@@ -12,3 +19,4 @@ class Node {
 		next = null;
 	}
 }
+
