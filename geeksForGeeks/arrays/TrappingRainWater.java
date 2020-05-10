@@ -20,7 +20,7 @@ class TrappingRainWater {
 			//two array method O(n) space O(n)
 			iTrapedWater = getTrappedWater(sc, iSize);
 			//two array method O(n) space O(1)
-			iTrapedWater = getTrappedWaterTwoPointerMethod(sc, iSize);
+			//iTrapedWater = getTrappedWaterTwoPointerMethod(sc, iSize);
 			System.out.println(iTrapedWater);
 		}
 		sc.close();
