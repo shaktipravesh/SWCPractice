@@ -1,18 +1,23 @@
 package InterviewQuestions;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.IntStream;
 
 public class ContainsDuplicate {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 	       BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 	        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
 	        int numbersCount = Integer.parseInt(bufferedReader.readLine().trim());
 
-	        List<Integer> numbers = IntStream.range(0, numbersCount).mapToObj(i -> {
+	        List<Integer> numbers = (List<Integer>) IntStream.range(0, numbersCount).mapToObj(i -> {
 	            try {
 	                return bufferedReader.readLine().replaceAll("\\s+$", "");
 	            } catch (IOException ex) {
@@ -31,6 +36,11 @@ public class ContainsDuplicate {
 	        bufferedReader.close();
 	        bufferedWriter.close();
 
+	}
+
+	private static Collector toList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
